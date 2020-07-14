@@ -1,35 +1,14 @@
-public class Main {
-    
-    //Generate 3 random numbers
-    public static int[] random() {
-      int a = 0;
-      int b = 10;
-      int[] result = new int[3];
+public class Task1 {
 
-      int randomNumber1 = a + (int) (Math.random() * b);
-      int randomNumber2 = a + (int) (Math.random() * b);
-      int randomNumber3 = a + (int) (Math.random() * b);
+  //Generates 3 random numbers and prints them after two spaces
+  public static void random() {
+    int min = 0;
+    int max = 10;
 
-      result[0] = randomNumber1;
-      result[1] = randomNumber2;
-      result[2] = randomNumber3;
+    int a = min + (int) (Math.random() * max);
+    int b = min + (int) (Math.random() * max);
+    int c = min + (int) (Math.random() * max);
 
-      return result;
-    }
-
-    //Print random 3 numbers
-    public static void printNumbers(int a, int b, int c) {
-      System.out.print(a);
-      System.out.print("  ");
-      System.out.print(b);
-      System.out.print("  ");
-      System.out.print(c);
-    }
-
-    public static void main(String[] args) {
-      int[] randomNumbers = new int[3];
-      randomNumbers = random();
-
-      printNumbers(randomNumbers[0], randomNumbers[1], randomNumbers[2]);
-    }
+    System.out.print(a + " " + b + " " + c);
+  }
 }
