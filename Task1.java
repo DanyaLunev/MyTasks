@@ -1,14 +1,26 @@
-public class Task1 {
+public class Main {
 
-  //Generates 3 random numbers and prints them after two spaces
-  public static void random() {
-    int min = 0;
-    int max = 10;
+  //Generate random number
+  public static int generateRandomNumber(int a, int b) {
+    int randomNumber1 = a + (int) (Math.random() * b);
+    int result = randomNumber1;
 
-    int a = min + (int) (Math.random() * max);
-    int b = min + (int) (Math.random() * max);
-    int c = min + (int) (Math.random() * max);
+    return result;
+  }
 
-    System.out.print(a + " " + b + " " + c);
+  //Print number
+  public static void printNumber(int a) {
+    System.out.print(a + "  ");
+  }
+
+  public static void printXNumber(int x) {
+    for (int i = 0; i < x; i++) {
+      int randomNumber = generateRandomNumber(0, 10);
+      printNumber(randomNumber);
+    }
+  }
+
+  public static void main(String[] args) {
+    printXNumber(40);
   }
 }
