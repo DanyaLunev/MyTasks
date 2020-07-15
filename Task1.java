@@ -1,4 +1,4 @@
-public class Main {
+public class Task1 {
 
   //Generate random number
   public static int generateRandomNumber(int a, int b) {
