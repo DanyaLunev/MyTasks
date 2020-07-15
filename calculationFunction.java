@@ -1,54 +1,85 @@
-public class calculation {
+//package com.denl;
+
+public class Main {
   
-    //Print number
-    public static void printNumber(int x) {
-      System.out.println(x);
-    }
-    
-    //Finds the perimeter of a square
-    public static void squarePerimeter(int a) {
-      printNumber(a * 4);
-    }
-  
-    //Finds the diameter of the circle
-    public static void circleDiameter(int b) {
-      printNumber(b * 2);
-    }
-  
-    //Squares a number
-    public static int squareNumber(int c) {
-      int result = c * c;
-      return result;
-    }
-    
-    //Finds the distance to the horizon
-    public static void skyline(int d) {
-      int radius = 6350;
-      int answer = (squareNumber(radius + d) - squareNumber(radius));
-      int answer1 = (int) Math.sqrt(answer);
-      printNumber(answer1);
-    }
-  
-    //Raises a number to a cube
-    public static int cube(int e) {
-      int result2 = e * e * e;
-      return result2;
-    }
-  
-    //Finds the volume and area of ​​a cube
-    public static void volumeAndArea(int f) {
-      printNumber(cube(f));
-      printNumber(f * f);
-    }
-  
-    //Finds the circumference and area of ​​a circle
-    public static void circumference(int g) {
-      printNumber(2 * 3 * g);
-      printNumber(3 * squareNumber(g));
-    }
-  
-    public static void main(String[] args) {
-      
-    }
-  
+  //Print number
+  public static void printNumber(int x) {
+    System.out.print(x);
   }
+  
+  public static void printNumber(double x) {
+    System.out.print(x);
+  }
+
+  //Finds the perimeter of a square
+  public static int squarePerimeter(int x) {
+    return x * 4;
+  }
+
+  //Finds the diameter of the circle
+  public static int circleDiameter(int x) {
+    return x * 2;
+  }
+
+  //Squares a number
+  public static int pow2(int x) {
+    int result = x * x;
+    //int result = (int) Math.pow(c, 2);
+
+    return result;
+  }
+  
+  public static double pow2(double x) {
+    double result = x * x;
+    //int result = (int) Math.pow(c, 2);
+
+    return result;
+  }
+
+  //Finds the distance to the horizont
+  //[(R+h)^2 - R^2]^1/2
+  public static int skyline(int height) {
+    int radius = 6350;
+    int answer = (pow2(radius + height) - pow2(radius));
+    answer = (int) Math.sqrt(answer);
+    
+    return answer;
+  }
+
+  //Raises a number to a cube
+  public static int pow3(int x) {
+    return x * x * x;
+    //return result2;
+  }
+
+  //Finds the volume and area of ​​a cube
+  public static int volumeCube(int x) {
+    return pow3(x);
+  }
+
+  //
+  public static int areaCube(int x) {
+    return pow2(x);
+  }
+
+  //Finds the circumference and area of ​​a circle
+  public static double circleCircumference(double x) {
+    return 2 * Math.PI * x;
+  }
+
+  public static double circleArea(double x) {
+    return Math.PI * pow2(x);
+  }
+
+  public static void main(String[] args) {
+    //printNumber(squarePerimeter(7));
+    //printNumber(circleDiameter(4));
+    //printNumber(skyline(4));
+    //printNumber(volumeCube(1));
+    //printNumber(areaCube(2));
+    //printNumber(circleCircumference(4));
+    //printNumber(circleArea(4));
+
+  }
+
+}
