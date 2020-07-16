@@ -43,11 +43,11 @@ class Sumofsquares {
   }
 
   public static void main(String[] args) {
-    int[] arr = {1, 7, 4, 3, 6, 5, 2, 1};
-    int[] maxAndMin = new int[2];
+    int[] inputs = {1, 7, 4, 3, 6, 5, 2, 1};
+    int[] maximums = new int[2];
 
-    maxAndMin = maxNumbers(arr);
-    int powSumma = powSum(maxAndMin[0], maxAndMin[1]);
+    maximums = maxNumbers(inputs);
+    int powSumma = powSum(maximus[0], maximus[1]);
 
     printNumber(powSumma);
   }
