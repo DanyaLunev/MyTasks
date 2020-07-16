@@ -5,7 +5,7 @@
 
 import java.util.Arrays;
 
-class sumofsquares {
+class Sumofsquares {
   
   //Print one number
   public static void printNumber(int x) {
@@ -14,7 +14,7 @@ class sumofsquares {
   
   //Elevates to a power
   public static int pow2(int x) {
-    return (int)Math.pow(x, 2);
+    return (int) Math.pow(x, 2);
   }
 
   //Fold two numbers
@@ -22,15 +22,33 @@ class sumofsquares {
     return x + y;
   }
 
-  public static int maxNumbers(int array[]) {
-    Arrays.sort(array);
-    for (int i = array.length - 2; i < array.length; i++) {
-      printNumber(array[i]);
-    }
+  //Find two MAX Numbers
+  public static int[] maxNumbers(int arr[]) {
+    Arrays.sort(arr);
+
+    int[] result = new int[2];
+    int length = arr.length;
+    
+    result[0] = arr[length - 1];
+    result[1] = arr[length - 2];
+
+    return result;
+  }
+
+  public static int powSum(int x, int y) {
+    x = pow2(x);
+    y = pow2(y);
+    
+    return addition(x, y);
   }
 
   public static void main(String[] args) {
-    int 
-    printNumber(maxNumbers([1, 2, 3, 4, 5]));
+    int[] arr = {1, 7, 4, 3, 6, 5, 2, 1};
+    int[] maxAndMin = new int[2];
+
+    maxAndMin = maxNumbers(arr);
+    int powSumma = powSum(maxAndMin[0], maxAndMin[1]);
+
+    printNumber(powSumma);
   }
 }
