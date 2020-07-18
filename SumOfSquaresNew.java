@@ -7,15 +7,30 @@ public class SumOfSquaresNew {
         System.out.print(x);
     }
 
+    public static void printNumber(double x) {
+        System.out.print(x);
+    }
+
+
     //Elevates to a power
     public static int pow2(int x) {
         return (int) Math.pow(x, 2);
     }
 
+    public static int pow2(double x) {
+        return (int) Math.pow(x, 2);
+    }
+
+
     //Fold two numbers
     public static int addition(int x, int y) {
         return x + y;
     }
+
+    public static double addition(double x, double y) {
+        return x + y;
+    }
+
 
     //Find two MAX Numbers
     public static int[] maxNumbers(int arr[]) {
@@ -44,6 +59,13 @@ public class SumOfSquaresNew {
     }
 
     public static int powSum(int x, int y) {
+        x = pow2(x);
+        y = pow2(y);
+
+        return addition(x, y);
+    }
+
+    public static double powSum(double x, double y) {
         x = pow2(x);
         y = pow2(y);
 
