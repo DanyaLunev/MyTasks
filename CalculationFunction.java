@@ -1,6 +1,6 @@
 //package com.denl;
 
-public class Main {
+public class CalculationFunction {
   
   //Print number
   public static void printNumber(int x) {
@@ -72,7 +72,7 @@ public class Main {
   }
 
   public static void main(String[] args) {
-    //printNumber(squarePerimeter(7));
+    printNumber(squarePerimeter(7));
     //printNumber(circleDiameter(4));
     //printNumber(skyline(4));
     //printNumber(volumeCube(1));

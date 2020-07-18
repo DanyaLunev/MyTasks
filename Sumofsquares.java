@@ -47,7 +47,7 @@ class Sumofsquares {
     int[] maximums = new int[2];
 
     maximums = maxNumbers(inputs);
-    int powSumma = powSum(maximus[0], maximus[1]);
+    int powSumma = powSum(maximums[0], maximums[1]);
 
     printNumber(powSumma);
   }
