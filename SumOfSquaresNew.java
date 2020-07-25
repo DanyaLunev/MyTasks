@@ -49,11 +49,14 @@ public class SumOfSquaresNew {
 
         for (int i = 2; i < arr.length; i++) {
             if (arr[i] > firstMax) {
+                secondMax = firstMax;
                 firstMax = arr[i];
             }
+            /*
             if (arr[i] > secondMax) {
                 secondMax = arr[i];
             }
+            */
         }
 
         result[0] = firstMax;
@@ -76,11 +79,14 @@ public class SumOfSquaresNew {
 
         for (int i = 2; i < arr.length; i++) {
             if (arr[i] > firstMax) {
+                secondMax = firstMax;
                 firstMax = arr[i];
             }
+            /*
             if (arr[i] > secondMax) {
                 secondMax = arr[i];
             }
+            */
         }
 
         result[0] = firstMax;
@@ -104,17 +110,17 @@ public class SumOfSquaresNew {
     }
 
     public static void main(String[] args) {
-        //int[] inputs = {1, 7, 4, 3, 6, 5, 2, 1};
-        //int[] maximums = new int[2];
-
-        //maximums = maxNumbers(inputs);
-        //int powSumma = powSum(maximums[0], maximums[1]);
-
-        double[] inputs = {1.1, 7.2, 4.3, 3.4, 6.5, 5.6, 2.7, 8.8};
-        double[] maximums = new double[2];
+        int[] inputs = {1, 7, 4, 3, 6, 5, 2, 8};
+        int[] maximums = new int[2];
 
         maximums = maxNumbers(inputs);
-        double powSumma = powSum(maximums[0], maximums[1]);
+        int powSumma = powSum(maximums[0], maximums[1]);
+
+        //double[] inputs = {1.1, 7.2, 4.3, 3.4, 6.5, 5.6, 2.7, 8.8};
+        //double[] maximums = new double[2];
+
+        //maximums = maxNumbers(inputs);
+        //double powSumma = powSum(maximums[0], maximums[1]);
 
         printNumber(powSumma);
     }
