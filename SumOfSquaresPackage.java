@@ -1,7 +1,7 @@
 
 import com.tasks.math.SquareRoot;
-        import com.tasks.view.Print;
-        import static com.tasks.math.SumOfSquares.sumOfSquares;
+import com.tasks.view.Print;
+import static com.tasks.math.SumOfSquares.sumOfSquares;
 
 
 class SumOfSquaresPackage {

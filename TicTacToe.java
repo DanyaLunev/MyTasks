@@ -1,7 +1,7 @@
 
 import io.hexlet.xo.model.*;
-        import io.hexlet.xo.view.*;
-        import io.hexlet.xo.controllers.*;
+import io.hexlet.xo.view.*;
+import io.hexlet.xo.controllers.*;
 
 public class TicTacToe {
 
